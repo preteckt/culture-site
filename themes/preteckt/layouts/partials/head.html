@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="{{ .Description }}">
+  <title>{{ .Site.Title }}</title>
+  {{ if eq (getenv "HUGO_ENV") "development" }}
+  {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma" "assets/scss")) }}
+  {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ else }}
+  {{ $cssOpts := (dict "enableSourceMap" false "includePaths" (slice "node_modules/bulma" "assets/scss")) }}
+  {{ with $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
+  <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+  {{ end }}
+</head>

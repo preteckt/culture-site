@@ -4,6 +4,7 @@ date: 2021-01-27T14:17:09-05:00
 draft: true
 ---
 
+<<<<<<< HEAD
 <!--Image Link-->
 [![Preteckt Logo](preteckt_logo.png)](https://www.preteckt.com/ "https://www.preteckt.com/")
 
@@ -114,3 +115,6 @@ to relax and recharge for the new year. Finally, as mentioned in the Learning
 and Teaching section, we offer growth coaching to all employees to help find 
 that balance.
 
+=======
+Can I see this yet?
+>>>>>>> 6366db9 (Added bulma theme support)
