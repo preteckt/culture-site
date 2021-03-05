@@ -1,0 +1,32 @@
+// Variable definition and import order is important. 
+// 1. Import any Bulmaswatch variables first.
+// 2. Override Bulmaswatch variables as required.
+// 3. Import Bulma itself
+// 4. Import swatch overrides
+// 5. Finish off with any theme specific customizations.
+
+// Colors
+
+$grey: #8c9b9d;
+$grey-light: #a9afb7;
+$grey-lighter: #dee2e5;
+$orange: #e67e22;
+$yellow: #f1b70e;
+$green: #2ecc71;
+$turquoise: #1abc9c;
+$blue: #3498db;
+$purple: #8e44ad;
+$red: #e74c3c;
+$white-ter: #ecf0f1;
+$primary: #326182 !default; // preteckt_blue
+$yellow-invert: #fff;
+$sky_blue: #BFE4F2; // light color used on preteckt.com and the dash
+
+// Fonts
+$family-sans-serif: "Roboto", "Helvetica", sans-serif;
+
+// Global Bulma variables
+$light: $sky_blue;
+$link: $primary;
+$background: $sky_blue;
+$footer-background-color: $sky_blue;

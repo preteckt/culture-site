@@ -1,0 +1,23 @@
+svg {
+  max-width: 256px;
+  margin: auto;
+  display:block;
+  padding-bottom: 25px;
+}
+
+hr {
+  background-color: $primary;
+}
+
+.footer-logo {
+  max-width: 241px;
+}
+
+.content h1 {
+  color: #dee2e5;
+  border-bottom: 1px solid $sky_blue;
+}
+
+.content a {
+  color: $sky_blue;
+}

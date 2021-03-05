@@ -1,11 +1,9 @@
 {{ define "main" }}
-<section class="section">
+<section class="section has-background-primary">
   <div class="container">
-    {{ range where .Site.Pages "Type" "index" }}
-    <article class="content">
+    <article class="content has-text-grey-lighter">
       {{ .Content }}
     </article>
-    {{ end }}
   </div>
 </section>
 {{ end }}
