@@ -1,0 +1,8 @@
+<header class="hero is-small">
+  <div class="hero-body container">
+    {{ partial "svg/preteckt-logo.svg" (dict "class" "header--icon")}}
+    {{ range where .Site.Pages "Type" "index" }}
+    <h2 class="title is-1 has-text-centered-touch is-size-3-mobile has-text-primary">{{ .Title }}</h2>
+    {{ end }}
+  </div>
+</header>
