@@ -13,6 +13,10 @@ hr {
   max-width: 241px;
 }
 
+.footer {
+  overflow: auto;
+}
+
 .content h1 {
   color: #dee2e5;
   border-bottom: 1px solid $sky_blue;
@@ -20,4 +24,16 @@ hr {
 
 .content a {
   color: $sky_blue;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.inline-svg {
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  padding-inline: .15rem;
 }

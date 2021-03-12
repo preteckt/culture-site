@@ -1,34 +1,36 @@
 <footer class="footer">
-  <div class="columns">
+  <div class="columns is-desktop">
     <div class="column">
       <figure class="image footer-logo">
         <img src="preteckt_logo.png" alt="Preteckt Logo">
       </figure>
-      <ul>
-        <li class="button">
-          <a href="https://www.linkedin.com/company/preteckt" target="_blank" rel="noopener" aria-label="Visit us on LinkedIn">
-            {{ partial "svg/linkedin.svg" (dict "class" "widget-social__link-icon") }}
-              <p>LinkedIn</p>
-            </a>
-        </li>
-      </ul>
+      <div class="block m-4">
+        <a href="https://www.linkedin.com/company/preteckt" 
+          target="_blank" 
+          rel="noopener" 
+          aria-label="Visit us on LinkedIn"
+          class="button is-primary">
+            {{ partial "fontawesome.html" "linkedin" }}
+            Visit us on Linkedin!
+        </a>
+      </div>
     </div>
-    <div class="column">
-      <h1>Locations</h1>
+    <div class="column is-pulled-right">
+      <h1 class="has-text-weight-bold">Locations</h1>
       <hr class="is-primary">
-      <div class="card is-pulled-left">
-        <h2 class="card-header">Memphis</h2>
+      <div class="column is-pulled-left">
+        <h2 class="has-text-weight-semibold">Memphis</h2>
         <br>
-        <address class="card-content">
+        <address>
           460 S Highland St.<br>
           Memphis, TN 38111<br>
           United States
         </address>
       </div>
-      <div class="card is-pulled-right">
-        <h2 class="card-header">Hamilton</h2>
+      <div class="column is-pulled-right">
+        <h2 class="has-text-weight-semibold">Hamilton</h2>
         <br>
-        <address class="card-content">
+        <address>
           115 King Street East, 3rd Floor<br>
           Hamilton, ON L8N 1A9<br>
           Canada
